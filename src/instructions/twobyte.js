@@ -1,0 +1,21 @@
+// total = 18 / 189
+export const twoByteInstrs = [
+    'MVI B',
+    'MVI C',
+    'MVI D',
+    'MVI E',
+    'MVI H',
+    'MVI L',
+    'MVI M',
+    'MVI A',
+    'ADI',
+    'ACI',
+    'SUI',
+    'SBI',
+    'ANI',
+    'XRI',
+    'ORI',
+    'CPI',
+    'OUT',
+    'IN',
+]
