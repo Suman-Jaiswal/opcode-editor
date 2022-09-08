@@ -88,6 +88,7 @@ export const oneByteInstrs = [
     'DCR L',
     'DCR M',
     'DCR A',
+
 ]
 
 export const others = [
