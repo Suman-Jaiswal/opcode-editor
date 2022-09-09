@@ -138,7 +138,7 @@ export default function OneByteModal() {
                         )
                     }
                 </div>
-                <div style={{ display: "flex", flexWrap: "wrap", width: 900, marginLeft: 20 }}>
+                <div style={{ display: "flex", flexWrap: "wrap", width: 380, marginLeft: 20 }}>
                     {
                         others.map((o, i) =>
                             <div key={i} style={{

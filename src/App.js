@@ -32,7 +32,7 @@ function App() {
                     }
                 </div>
             </div>
-
+          <div style={{fontSize: 10, color: "#444", marginLeft: 10}} >Developed By Suman Jaiswal &copy; 2022</div>
         </div>
     );
 }

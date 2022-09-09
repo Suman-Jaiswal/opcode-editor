@@ -1,20 +1,18 @@
 .container {
     display: flex;
-
 }
 .container .box{
     border: 2px solid grey;
     border-radius: 5px;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
 }
 .editor{
-    width: 500px;
-    height: 600px;
+    width: 450px;
+    height: 620px;
 }
 .dialog {
     height: fit-content;
-    min-width: 300px;
 }
 input{
     width: 100%;
