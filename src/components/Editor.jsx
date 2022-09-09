@@ -19,7 +19,7 @@ export default function Editor() {
     const convert = () => {
 
         if (name === "" || data === "") return
-        
+
         console.log("run");
         localStorage.setItem('programs', [...programs, { name, data }])
         setPrograms(p => [...p, { name, data }])
@@ -102,11 +102,7 @@ export default function Editor() {
 
                     <div>
                         <textarea required value={data}
-                            placeholder='<Start_Address>:
-                    <INSTR 1>
-                    <INSTR 2>
-                    <INSTR 3>
-                    ....'
+                            placeholder={'<Start_Address>: \n<INSTR 1> \n<INSTR 2> \n<INSTR 3> \n  ....'}
                             onChange={(e) => setData(e.target.value)} style={{ padding: 5 }} rows="30" cols="25" />
                     </div>
                     <div style={{ textAlign: "center", width: "80%" }} >
