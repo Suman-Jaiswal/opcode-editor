@@ -13,15 +13,19 @@ export default function Editor() {
     const [result, setResult] = useState("");
     const [compact, setCompact] = useState("");
     const [isCompact, setIsCompact] = useState(false);
-    const [programs, setPrograms] = useState(localStorage.getItem('programs') ?
-        localStorage.getItem('programs') : [])
+    const [programs, setPrograms] = useState(!localStorage.getItem('programs') ? []:
+        JSON.parse(localStorage.getItem('programs')) )
+
+    console.log(programs)
 
     const convert = () => {
 
         if (name === "" || data === "") return
 
         console.log("run");
-        localStorage.setItem('programs', [...programs, { name, data }])
+        let local = [...programs, { name, data }]
+   
+        localStorage.setItem('programs', JSON.stringify(local))
         setPrograms(p => [...p, { name, data }])
 
         let arr = data.split('\n');
